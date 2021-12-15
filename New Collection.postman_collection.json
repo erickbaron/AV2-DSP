@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "fac97c27-e915-44ab-8d2f-50f90fc54df0",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Erick\",\r\n    \"cpf\":\"12312312300\",\r\n    \"email\":\"erick@teste.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/pessoa",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/pessoa",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Disciplina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Disciplina",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Erick\",\r\n    \"cargaHoraria\":\"10\",\r\n    \"ementa\":\"teste de ementa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/pessoa",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstudanteDisciplina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/estudanteDisciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"estudanteDisciplina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstudanteDisciplina",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"semestre\": \"2\",\r\n    \"pessoa_id\": \"1\",\r\n    \"disciplina_id\": \"1\",\r\n    \"mediaFinal\": \"10\",\r\n    \"frequencia\": \"74\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/estudanteDisciplina",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"estudanteDisciplina"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
